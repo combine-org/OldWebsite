@@ -1,4 +1,6 @@
 # OldWebsite
 Static copy of the old COMBINE website
 
+See https://github.com/combine-org/combine-org.github.io/issues/105 for progress making a copy of the old Combine site
+
 Go to https://combine-org.github.io/OldWebsite/ 
