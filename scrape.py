@@ -3,9 +3,7 @@ import requests
 import os
 
 
-all ='''/events/COMBINE_2019/abstracts
-node/260
-/events/COMBINE_2019/agenda'''
+# Search for: node/[0-9]+	edit	delete
 
 all = '''/events/COMBINE_2019/abstracts
 /events/COMBINE_2019/agenda
@@ -57,7 +55,11 @@ events/COMBINE_2013/exit-survey
 events/COMBINE_2013/full-agenda
 events/COMBINE_2014
 events/COMBINE_2014/abstracts
+specifications/combine_archive-Draft1.pdf
 '''
+
+
+
 
 for l in all.split('\n'):
     parts = l.strip('/').split('/')
@@ -79,7 +81,17 @@ for l in all.split('\n'):
 
     fname = '%s.html'%name
     url = 'http://co.mbine.org/' + l
+    url = 'http://131.215.225.44/' + l
     r = requests.get(url)
-    tgt = '%s/%s'%(dir, fname)
-    print("     Copying %s to %s" %(url, tgt))
-    open(tgt , 'wb').write(r.content)
+    if '.pdf' in url:
+
+        fname = name
+        tgt = '%s/%s'%(dir, fname)
+        print("     Copying %s to %s" %(url, tgt))
+        open(tgt , 'wb').write(r.content)
+    else:
+        tgt = '%s/%s'%(dir, fname)
+        print("     Copying %s to %s" %(url, tgt))
+        updated = str.encode(r.content.decode().replace('http://co.mbine','http://old_co.mbine'))
+        print(type(updated))
+        open(tgt , 'w').write(updated.decode())
