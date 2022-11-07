@@ -507,6 +507,11 @@ tools
 user_help
 '''
 
+all__ = '''/events/COMBINE_2019/abstracts
+/events/COMBINE_2019/agenda
+/standards/sbml/level-3/version-1/core
+about'''
+
 
 for l in all.split('\n'):
     parts = l.strip('/').split('/')
@@ -538,6 +543,9 @@ for l in all.split('\n'):
     else:
         tgt = '%s/%s'%(dir, fname)
         print("     Copying %s to %s" %(url, tgt))
-        updated = str.encode(r.content.decode().replace('http://co.mbine','http://old_co.mbine'))
+        cc = r.content.decode()
+        cc = cc.replace('http://co.mbine','http://old_co.mbine')
+        cc = cc.replace('?q=system/files/','system/files/')
+        updated = str.encode(cc)
         print(type(updated))
         open(tgt , 'w').write(updated.decode())
