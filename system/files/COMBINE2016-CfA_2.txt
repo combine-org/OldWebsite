@@ -1,0 +1,86 @@
+== Call for Abstracts ==
+
+
+COMBINE 2016: 7th Computational Modeling in Biology Network Workshop
+
+19-23 September 2016, Newcastle upon Tyne, UK
+
+http://co.mbine.org/events/COMBINE_2016
+
+
+The "Computational Modeling in Biology" Network (COMBINE) is an initiative to coordinate 
+the development of the various community standards and formats in systems biology and 
+related fields. COMBINE 2016 will be a workshop-style event with oral presentations, 
+posters, and breakout sessions. The five meeting days will include talks about the COMBINE 
+standards and associated or related standardization efforts, as well as presentations 
+of tools using these standards. Oral presentations will be selected from the submitted 
+abstracts. In addition, poster sessions will allow people to inform each other about their 
+software and other projects in a setting that fosters interaction and in-depth discussion. 
+
+
+== IMPORTANT DATES ==
+Abstract submission:        8 July 2016
+Scholarship application:    8 July 2016
+Notification:              15 July 2016
+COMBINE Workshop:  19-23 September 2016
+
+
+== KEYNOTE SPEAKERS ==
+- Alfonso Bueno-Orovio (Oxford)
+- Carole Goble (Manchester)
+- Michael Hucka (Caltech)
+- Dagmar Iber (ETH Zurich)
+- Andrew Millar (Edinburgh)
+- Chris J. Myers (Utah)
+- Daryl Shanley (Newcastle)
+- Yujiang Wang (Newcastle)
+
+
+== TOPICS OF INTEREST ==
+Topics include, but are not limited to:
+- Data exchange and model standards for systems biology
+- Graphical notation standards for systems biology
+- Standards for sharing and analysing biological pathway data
+- Standards for computational biological models
+More on the COMBINE standards at http://co.mbine.org/standards
+
+
+== CALL FOR ABSTRACTS ==
+We solicit high-quality abstracts, to be refereed by the COMBINE Coordinators below, for either
+oral or poster presentation at the Workshop. Abstracts will appear on the COMBINE website only,
+there will be no formal publication.
+
+Please see the COMBINE website for submission instructions.
+
+
+== TRAVEL SCHOLARSHIPS ==
+PhD students and postdocs may apply for travel funds to attend COMBINE. More information 
+on the COMBINE website.
+
+
+== ACKNOWLEDGEMENTS ==
+COMBINE 2016 is generously supported by:
+- Engineering and Physical Sciences Research Council (UK) [AUDACIOUS project EP/J004111/2]
+- Interdisciplinary Computing and Complex BioSystems Group (ICOS)
+- School of Computing Science, Newcastle University
+- National Science Foundation (USA)
+
+
+== LOCAL CHAIRS ==
+Paolo Zuliani & Anil Wipat, ICOS Group, School of Computing Science, Newcastle University.
+
+
+== LOCAL ORGANISERS ==
+Keith Flanagan & Claire Smith, ICOS Group, School of Computing Science, Newcastle University.
+
+
+== COMBINE COORDINATORS ==
+Gary Bader (Toronto)
+Martin Golebiewski (Heidelberg)
+Michael Hucka (Caltech)
+Nicolas Le Novère (Babraham)
+Chris J. Myers (Utah)
+David Nickerson (Auckland)
+Falk Schreiber (Monash)
+Dagmar Waltemath (Rostock)
+
