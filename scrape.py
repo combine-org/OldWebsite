@@ -510,7 +510,13 @@ user_help
 all__ = '''/events/COMBINE_2019/abstracts
 /events/COMBINE_2019/agenda
 /standards/sbml/level-3/version-1/core
-about'''
+about
+events
+standards/sbml/level-3/version-1/core
+standards/sbml/level-3/version-1/core/release-1
+standards/sbml/level-3/version-1/core/release-2
+standards/sbml/level-3/version-1/core/release-3
+standards/sbml/level-3/version-1/distrib'''
 
 
 for l in all.split('\n'):
@@ -530,6 +536,18 @@ for l in all.split('\n'):
             dir = '%s/%s'%(parts[0],parts[1])
             if not os.path.exists(dir):
                 os.makedirs(dir)
+        if len(parts)>=4:
+            dir = '%s/%s/%s'%(parts[0],parts[1],parts[2])
+            if not os.path.exists(dir):
+                os.makedirs(dir)
+        if len(parts)>=5:
+            dir = '%s/%s/%s/%s'%(parts[0],parts[1],parts[2],parts[3])
+            if not os.path.exists(dir):
+                os.makedirs(dir)
+        if len(parts)>=6:
+            dir = '%s/%s/%s/%s/%s'%(parts[0],parts[1],parts[2],parts[3],parts[4])
+            if not os.path.exists(dir):
+                os.makedirs(dir)
 
     fname = '%s.html'%name
     url = 'http://co.mbine.org/' + l
@@ -546,6 +564,8 @@ for l in all.split('\n'):
         cc = r.content.decode()
         cc = cc.replace('http://co.mbine','http://old_co.mbine')
         cc = cc.replace('?q=system/files/','system/files/')
+        cc = cc.replace('href="/freelinking/', 'href="/')
+        cc = cc.replace('%20" cla', '" cla')
         updated = str.encode(cc)
         print(type(updated))
         open(tgt , 'w').write(updated.decode())
