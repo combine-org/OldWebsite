@@ -507,7 +507,7 @@ tools
 user_help
 '''
 
-all__ = '''/events/COMBINE_2019/abstracts
+all_ = '''/events/COMBINE_2019/abstracts
 /events/COMBINE_2019/agenda
 /standards/sbml/level-3/version-1/core
 about
@@ -516,7 +516,8 @@ standards/sbml/level-3/version-1/core
 standards/sbml/level-3/version-1/core/release-1
 standards/sbml/level-3/version-1/core/release-2
 standards/sbml/level-3/version-1/core/release-3
-standards/sbml/level-3/version-1/distrib'''
+standards/sbml/level-3/version-1/distrib
+events/COMBINE_2018'''
 
 
 for l in all.split('\n'):
@@ -563,7 +564,7 @@ for l in all.split('\n'):
         print("     Copying %s to %s" %(url, tgt))
         cc = r.content.decode()
         cc = cc.replace('http://co.mbine','http://old_co.mbine')
-        cc = cc.replace('?q=system/files/','system/files/')
+        cc = cc.replace('?q=system/files/','/system/files/')
         cc = cc.replace('href="/freelinking/', 'href="/')
         cc = cc.replace('%20" cla', '" cla')
         updated = str.encode(cc)
