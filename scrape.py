@@ -106,9 +106,7 @@ events/HARMONY_2014
 events/HARMONY_2014/presentations
 events/HARMONY_2014/travel-options
 events/HARMONY_2015
-'''
-
-all='''events/HARMONY_2015/Attendees
+events/HARMONY_2015/Attendees
 events/HARMONY_2015/Posters
 events/HARMONY_2016
 events/HARMONY_2016/Attendees
